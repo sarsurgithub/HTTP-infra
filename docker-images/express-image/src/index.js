@@ -17,7 +17,7 @@ function generatePoem() {
     // à approfondir mais ça marche 
     console.log('je suis ici')
     let title = chance.word()
-    let poem = title + '\n' + '\n'
+    let poem = title + '<br>' + '<br>'
     let firstEnd = chance.syllable()
     let secondEnd = chance.syllable()
     while (firstEnd === secondEnd){
@@ -35,9 +35,9 @@ function generatePoem() {
         sentence1 += chance.word() 
         sentence2 += chance.word() 
 
-        poem += sentence1 + firstEnd + '\n' + sentence2 + secondEnd + '\n' 
+        poem += sentence1 + firstEnd + '<br>' + sentence2 + secondEnd + '<br>' 
     }
-    poem +=  '\n' 
+    poem +=  '<br>' 
     for (let i = 0; i < 2; i++ ){
         let sentence1 = chance.word() + ' '
         let sentence2 = chance.word() + ' '
@@ -48,11 +48,9 @@ function generatePoem() {
         sentence1 += chance.word() 
         sentence2 += chance.word() 
 
-        poem += sentence1 + firstEnd + '\n' + sentence2 + secondEnd + '\n' 
+        poem += sentence1 + firstEnd + '<br>' + sentence2 + secondEnd + '<br>' 
     }
-    console.log(poem)
-    return [{firstEnd, secondEnd},
-        {title},
-        {poem}
-    ]
+    poem += '<br><br>'
+    return  {poem}
+    
 }

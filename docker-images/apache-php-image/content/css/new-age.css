@@ -45,6 +45,11 @@ h6 {
   letter-spacing: 1px;
 }
 
+#poem {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -431,3 +436,5 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 11px;
   padding: 15px 45px;
 }
+
+
