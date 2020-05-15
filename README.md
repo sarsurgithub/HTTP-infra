@@ -1,6 +1,6 @@
 # HTTP Infrastructure Lab Doc for Grandmas
 
-## Step 3: AJAX requests with JQuery
+## Step 4: AJAX requests with JQuery
 
 #### Goals
 
