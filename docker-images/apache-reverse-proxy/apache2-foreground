@@ -1,0 +1,9 @@
+#!/bin/bash 
+set -e 
+
+php /var/apache2/templates/config-template.php > /etc/apache2/sites-available/001-reverse-proxy.conf
+
+
+rm -f /var/run/apache2/apache2.pid 
+
+exec apache2 -DFOREGROUND
